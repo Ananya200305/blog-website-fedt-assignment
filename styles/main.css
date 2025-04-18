@@ -1,0 +1,175 @@
+/* THIS IS CSS RESET SO THAT WE CAN START WITH A CLEAN SLATE */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  background-color: #fff;
+  color: #000;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+/* CSS RESET ENDS HERE */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    font-family: 'Inter', sans-serif;
+}
+:root {
+    --bg-color : #fff;
+    --text-color : #000;
+    --text-secondary-color : #667085;
+
+}
+
+[data-theme="dark"] {
+    --bg-color : #090D1F;
+    --text-color : #c0c5d0;
+
+}
+
+.background {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.wrapper{
+    min-height: 100vh;
+    /* after 1280px it will not grow anymore */
+    max-width: 1280px; 
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 10%;
+}
+.navlinks{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+
+
+
+.open{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+    z-index: 10;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.navlinks a:hover{
+    color: var(--text-secondary-color);
+    text-decoration: underline;
+    transition : all 0.3s ease-in-out;
+}
+
+.hero{
+    border-top: 2px solid var(--text-secondary-color);
+    border-bottom: 2px solid var(--text-secondary-color);
+    margin: 2rem 4rem;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    font-weight: 400;
+
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.bar{
+    width: 2rem;
+    height: 0.25rem;
+    background-color: var(--text-color);
+    margin: 0.3rem 0;
+    transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+    .hero{
+        font-size: 4rem;
+        padding: 2rem 2rem;
+        margin: 2rem 1rem;
+    }
+    .navlinks{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .navbar .logo{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    
+}
+
