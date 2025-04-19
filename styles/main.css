@@ -70,6 +70,10 @@ h1, h2, h3, h4, h5, h6 {
     --bg-color : #090D1F;
     --text-color : #c0c5d0;
 
+     /* Dark Theme for Blog Card */
+     --blog-card-bg-color: #2a2e3d;
+     --blog-card-text-color: #fff;   
+
 }
 
 .background {
@@ -128,12 +132,12 @@ h1, h2, h3, h4, h5, h6 {
     border-top: 2px solid var(--text-secondary-color);
     border-bottom: 2px solid var(--text-secondary-color);
     margin: 2rem 4rem;
-    padding: 2rem 4rem;
+    padding: 0rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 6rem;
-    font-weight: 400;
+    font-size: 9rem;
+    font-weight: 700;
 
 }
 .hamburger{
@@ -173,3 +177,95 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
+/*Container CSS*/
+
+.container-text{
+    margin-left: 3rem;
+    font-weight: bold;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: auto;
+  gap: 1.5rem; 
+  padding: 3rem;
+}
+
+/* Grid items */
+
+.one{
+    /* background-color: lightpink; */
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-row: span 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.two{
+    /* background-color: lightblue; */
+    height: 150px;
+}
+
+.three{
+    /* background-color: lightcoral; */
+    height: 150px;
+}
+
+.four{
+    /* background-color: antiquewhite; */
+    grid-column: span 2;
+    height: 300px;
+}
+
+/* Blog Card Styles */
+
+.blog-card{
+    background-color: rgb(250, 248, 244);
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+[data-theme= "dark"] .blog-card{
+    background-color: var(--blog-card-bg-color);
+    color: var(--blog-card-text-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    .container-text{
+        margin-left: 1.5rem;
+    }
+    .container {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+    .one{
+        grid-row: span 1;
+        grid-column: span 1;
+        height: 150px;
+    }
+    .two, .three{
+        height: 150px;
+    }
+    .four{
+        grid-column: span 1; 
+        height: 150px; 
+    }
+    .blog-card{
+        padding: 1rem;
+    }
+}
