@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+
+</head>
+<body class="background wrapper">
+<!-- navigation bar section -->
+<nav class="navbar">
+    <img src="logo-light.png" data-light="logo-light.png" data-dark="logo-dark.png" alt="logo" class="logo">
+    <ul class="navlinks">
+        <li> <a  href="index.html">Home</a></li>
+        <input type="checkbox" id="theme-toggle" class="theme-toggle"  onclick="toggleTheme()">
+        <label for="theme-toggle" class="toggle-label">
+            <span class="toggle-label-light">Light</span>
+            <span class="toggle-label-dark">Dark</span>
+        </label>
+    </ul>
+    <span class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+</nav>
+    <main>
+        <div class="container-text all-blog-container-text">All Blog Posts</div>
+        <div class="container all-blog-container"> 
+            <article class="blog-card all-blog-card">
+                <img src="img/img2.jpg" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <p class="blog-meta">Alec Whitten • 1 Jan 2023</p>
+                    <h3 class="blog-title">Bill Walsh leadership lessons</h3>
+                    <p class="blog-description">
+                        Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
+                    </p>
+                    <div class="blog-tages">
+                        <span class="tag tag-leadership">Leadership</span>
+                        <span class="tag tag-management">Management</span>
+                    </div>
+                </div>
+            </article>
+            <article class="blog-card all-blog-card">
+                <img src="img/img3.jpg" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <p class="blog-meta">Demi WIlkinson • 1 Jan 2023</p>
+                    <h3 class="blog-title">PM mental models</h3>
+                    <p class="blog-description">
+                        Mental models are simple expressions of complex processes or relationships.                    </p>
+                    <div class="blog-tages">
+                        <span class="tag tag-product">Product</span>
+                        <span class="tag tag-research">Research</span>
+                        <span class="tag tag-framework">Freamework</span>
+                    </div>
+                </div>
+            </article>
+            <article class="blog-card all-blog-card">
+                <img src="img/img4.jpg" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <p class="blog-meta">Candice Wu • 1 Jan 2023</p>
+                    <h3 class="blog-title">What is Wireframing?</h3>
+                    <p class="blog-description">
+                        Introduction to Wireframing and its Principles. Learn from the best in the industry.                    </p>
+                    <div class="blog-tages">
+                        <span class="tag tag-design">Design</span>
+                        <span class="tag tag-research">Research</span>
+                    </div>
+                </div>
+            </article>
+            <article class="blog-card all-blog-card">
+                <img src="img/img5.jpg" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <p class="blog-meta">Natali Craig • 1 Jan 2023</p>
+                    <h3 class="blog-title">How collaboration makes us better designers</h3>
+                    <p class="blog-description">
+                        Collaboration can make our teams stronger, and our individual designs better.                    </p>
+                    <div class="blog-tages">
+                        <span class="tag tag-design">Design</span>
+                        <span class="tag tag-research">Research</span>
+                    </div>
+                </div>
+            </article>
+            <article class="blog-card all-blog-card">
+                <img src="img/img6.jpg" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <p class="blog-meta">Drew Cano • 1 Jan 2023</p>
+                    <h3 class="blog-title">Our top 10 Javascript frameworks to use</h3>
+                    <p class="blog-description">
+                        JavaScript frameworks make development easy with extensive features and functionalities.                    </p>
+                    <div class="blog-tages">
+                        <span class="tag tag-software-development">Software Development</span>
+                        <span class="tag tag-tools">Tools</span>
+                        <span class="tag tag-saas">SaaS</span>
+                    </div>
+                </div>
+            </article>
+            <article class="blog-card all-blog-card">
+                <img src="img/img7.jpg" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <p class="blog-meta">Orlando Diggs • 1 Jan 2023</p>
+                    <h3 class="blog-title">Podcast: Creating a better CX Community</h3>
+                    <p class="blog-description">
+                        Starting a community doesn't need to be complicated, but how do you get started?                    </p>
+                    <div class="blog-tages">
+                        <span class="tag tag-design">Podcast</span>
+                        <span class="tag tag-research">Customer Success</span>
+                    </div>
+                </div>
+            </article>
+            <article class="blog-card all-blog-card">
+                <img src="img.png" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <p class="blog-meta">Olivia Rhye . Jan 2023</p>
+                    <h3 class="blog-title">UX review presentation</h3>
+                    <p class="blog-description">
+                        How do you create compelling presentations that wow your colleagues and impress your managers?
+                    </p>
+                    <div class="blog-tages">
+                        <span class="tag tag-design">Design</span>
+                        <span class="tag tag-research">Research</span>
+                        <span class="tag tag-presentation">Presentation</span>
+                    </div>
+                </div>
+            </article>
+            <article class="blog-card all-blog-card">
+                <img src="img.png" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <p class="blog-meta">Olivia Rhye . Jan 2023</p>
+                    <h3 class="blog-title">UX review presentation</h3>
+                    <p class="blog-description">
+                        How do you create compelling presentations that wow your colleagues and impress your managers?
+                    </p>
+                    <div class="blog-tages">
+                        <span class="tag tag-design">Design</span>
+                        <span class="tag tag-research">Research</span>
+                        <span class="tag tag-presentation">Presentation</span>
+                    </div>
+                </div>
+            </article>
+            <article class="blog-card all-blog-card">
+                <img src="img.png" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <p class="blog-meta">Olivia Rhye . Jan 2023</p>
+                    <h3 class="blog-title">UX review presentation</h3>
+                    <p class="blog-description">
+                        How do you create compelling presentations that wow your colleagues and impress your managers?
+                    </p>
+                    <div class="blog-tages">
+                        <span class="tag tag-design">Design</span>
+                        <span class="tag tag-research">Research</span>
+                        <span class="tag tag-presentation">Presentation</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+</html>

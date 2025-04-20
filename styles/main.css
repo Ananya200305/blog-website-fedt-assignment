@@ -70,6 +70,10 @@ h1, h2, h3, h4, h5, h6 {
     --bg-color : #090D1F;
     --text-color : #c0c5d0;
 
+     /* Dark Theme for Blog Card */
+     --blog-card-bg-color: #2a2e3d;
+     --blog-card-text-color: #fff;   
+
 }
 
 .background {
@@ -128,12 +132,12 @@ h1, h2, h3, h4, h5, h6 {
     border-top: 2px solid var(--text-secondary-color);
     border-bottom: 2px solid var(--text-secondary-color);
     margin: 2rem 4rem;
-    padding: 2rem 4rem;
+    padding: 0rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 6rem;
-    font-weight: 400;
+    font-size: 9rem;
+    font-weight: 700;
 
 }
 .hamburger{
@@ -173,3 +177,272 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
+/* Home Page Blog CSS*/
+
+.container-text{
+    margin-left: 3rem;
+    font-weight: bold;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: auto;
+  gap: 1.5rem; 
+  padding: 3rem;
+}
+
+/* Grid items */
+
+.one{
+    /* background-color: lightpink; */
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-row: span 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+}
+.two{
+    /* background-color: lightblue; */
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+}
+
+.three{
+    /* background-color: lightcoral; */
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+}
+
+.four{
+    /* background-color: antiquewhite; */
+    grid-column: span 2;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Blog Card Styles */
+
+.blog-card{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+[data-theme= "dark"] .blog-card{
+    background-color: var(--blog-card-bg-color);
+    color: var(--blog-card-text-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    .container-text{
+        margin-left: 1.5rem;
+    }
+    .container {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+    .one{
+        grid-row: span 1;
+        grid-column: span 1;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+    .two, .three{
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+    .four{
+        grid-column: span 1; 
+        height: 550px; 
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-card{
+        padding: 1rem;
+    }
+}
+
+/* All Blog Page CSS */
+
+.all-blog-container-text{
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+
+.all-blog-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 2rem;
+    gap : 2rem;
+}
+
+.all-blog-card{
+    height: 400px;
+}
+
+/* Logo CSS */ 
+
+.logo{
+    height: 100px;
+    margin-left: -100px;
+}
+
+.home-logo{
+    height: 100px;
+}
+
+/* CSS of Cards */ 
+
+.blog-image{
+    width: 100%;
+    height: 45%; /* Cover the top half of the card */
+    display: block;
+}
+
+.home-blog-image{
+    width: 50%;
+}
+
+.blog-content{
+    padding: 1rem;
+}
+
+.blog-meta{
+    font-size: 1rem;
+    color: #6b46c1;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.blog-title {
+  font-size: 1.30rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.blog-description {
+  color: rgb(154, 154, 154);
+  font-size: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.blog-tages{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.tag{
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.3rem 0.5rem;
+    border-radius: 999px;
+    display: inline-block;
+}
+
+.tag-design{
+    background-color: #e6ddf9;
+    color: #6b46c1;
+}
+
+.tag-research{
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.tag-presentation{
+    background-color: #f7cece;
+    color: #ce3434;
+}
+
+.tag-leadership{
+    background-color: #d1fae5;
+    color: #059669;
+}
+
+.tag-management{
+    background-color: #fefcbf;
+    color: #ca8a04;
+}
+
+.tag-product{
+    background-color: #fec7fb;
+    color: #b001c0;
+}
+
+.tag-framework{
+    background-color: #fec0de;
+    color: #ca0453;
+}
+
+.tag-software-development{
+    background-color: bisque;
+    color: brown;
+}
+.tag-tools{
+    background-color: #cef7f1;
+    color: #16baa2;
+}
+.tag-saas{
+    background-color: #cbe6f6;
+    color: #167eba;
+}
+
+/* Dark theme */
+
+[data-theme="dark"] .blog-card {
+    color: #f0f0f0;
+  }
+  
+[data-theme="dark"] .blog-description {
+    color: #ccc;
+}
+[data-theme="dark"] .blog-meta {
+    color: #fec7fb;
+}
+
+@media screen and (max-width: 768px) {
+    .all-blog-container-text{
+        margin-left: 1.5rem;
+    }
+    .all-blog-container {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+    .logo{
+        margin-left: -20px;
+    }
+    .home-blog-image{
+        width: 100%;
+        height: 45%; /* Cover the top half of the card */
+        display: block;
+
+    }
+    .all-blog-card{
+        height: 550px;
+    }
+}
