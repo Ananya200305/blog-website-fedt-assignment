@@ -14,10 +14,9 @@
     <img src="logo-light.png" data-light="logo-light.png" data-dark="logo-dark.png" alt="logo" class="logo">
     <ul class="navlinks">
         <li> <a  href="index.html">Home</a></li>
-        <input type="checkbox" id="theme-toggle" class="theme-toggle"  onclick="toggleTheme()">
-        <label for="theme-toggle" class="toggle-label">
-            <span class="toggle-label-light">Light</span>
-            <span class="toggle-label-dark">Dark</span>
+        <label for="theme-toggle" class="toggle-label" >
+            <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
+            <span class="toggle-ball"></span>
         </label>
     </ul>
     <span class="hamburger" id="hamburger">
@@ -27,7 +26,10 @@
     </span>
 </nav>
     <main>
-        <div class="container-text all-blog-container-text">All Blog Posts</div>
+        <div class="heading-container">
+            <p class="container-text all-blog-container-text">All Blog Posts</p>
+            <input type="text" class="search-bar" placeholder="Search for blog posts..."/>
+        </div>
         <div class="container all-blog-container"> 
             <article class="blog-card all-blog-card">
                 <img src="img/img2.jpg" alt="Blog Image" class="blog-image">
