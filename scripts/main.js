@@ -10,4 +10,9 @@ const toggleTheme = () => {
         const newSrc = newTheme === "dark" ? logo.dataset.dark : logo.dataset.light;
         logo.src = newSrc;
     }
+    const footerLogo = document.querySelector(".footer-logo");
+    if(footerLogo){
+        const newSrc = newTheme === "dark" ? footerLogo.dataset.dark : footerLogo.dataset.light;
+        footerLogo.src = newSrc;
+    }
 }
