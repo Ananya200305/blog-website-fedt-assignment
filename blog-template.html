@@ -20,11 +20,23 @@
                 <span class="toggle-ball"></span>
             </label>
         </ul>
-        <span class="hamburger" id="hamburger">
+        <span class="hamburger" id="hamburger" onclick="toggleHamburger()" >
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </span>
+        <ul class="navlinks-mobile" style="display: none;">
+           <div class="x-container">
+               <button onclick="toggleHamburger()">X</button>
+            </div>
+            <div class="mobile-links">
+                <a  href="all-blog.html">All Blogs</a>
+                <label for="theme-toggle-mobile" class="toggle-label" >
+                    <input type="checkbox" id="theme-toggle-mobile" onclick="toggleTheme()">
+                    <span class="toggle-ball"></span>
+                </label>
+            </div>
+        </ul>
     </nav>
     <article class="blog-section">
         <div class="blog-page-title">
