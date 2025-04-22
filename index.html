@@ -19,11 +19,23 @@
             <span class="toggle-ball"></span>
         </label>
     </ul>
-    <span class="hamburger" id="hamburger">
+    <span class="hamburger" id="hamburger" onclick="toggleHamburger()" >
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
     </span>
+    <ul class="navlinks-mobile" style="display: none;">
+       <div class="x-container">
+           <button onclick="toggleHamburger()">X</button>
+        </div>
+        <div class="mobile-links">
+            <a  href="all-blog.html">All Blogs</a>
+            <label for="theme-toggle-mobile" class="toggle-label" >
+                <input type="checkbox" id="theme-toggle-mobile" onclick="toggleTheme()">
+                <span class="toggle-ball"></span>
+            </label>
+        </div>
+    </ul>
 </nav>
     <main>
         <div class="hero">
@@ -32,8 +44,8 @@
             </h1>
         </div>
         <div class="container-text">Recent Blog Posts</div>
-        <div class="container"> 
-            <article class="blog-card one">
+        <div class="container">
+            <article class="blog-card one" onclick="window.location.href='/blog-template.html'">
                 <img src="img/img1.jpg" alt="Blog Image" class="blog-image">
                 <div class="blog-content">
                     <p class="blog-meta">Olivia Rhye . Jan 2023</p>
@@ -48,7 +60,7 @@
                     </div>
                 </div>
             </article>
-            <article class="blog-card two">
+            <article class="blog-card two" onclick="window.location.href='/blog-template.html'">
                 <img src="img/img8.jpg" alt="Blog Image" class="home-blog-image">
                 <div class="blog-content">
                     <p class="blog-meta">Phoenix Baker • 1 Jan 2023</p>
@@ -61,7 +73,7 @@
                     </div>
                 </div>
             </article>
-            <article class="blog-card three">
+            <article class="blog-card three" onclick="window.location.href='/blog-template.html'">
                 <img src="img/img9.jpg" alt="Blog Image" class="home-blog-image">
                 <div class="blog-content">
                     <p class="blog-meta">Lana Steiner • 1 Jan 2023</p>
@@ -74,7 +86,7 @@
                     </div>
                 </div>
             </article>
-            <article class="blog-card four">
+            <article class="blog-card four" onclick="window.location.href='/blog-template.html'">
                 <img src="img/img10.jpg" alt="Blog Image" class="home-blog-image">
                 <div class="blog-content">
                     <p class="blog-meta">Olivia Rhye • 1 Jan 2023</p>

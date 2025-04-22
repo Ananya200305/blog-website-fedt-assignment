@@ -28,10 +28,13 @@
     <main>
         <div class="heading-container">
             <p class="container-text all-blog-container-text">All Blog Posts</p>
-            <input type="text" class="search-bar" placeholder="Search for blog posts..."/>
+            <input type="text" class="search-bar" id="search-input" placeholder="Search for blog posts..." />
         </div>
         <div class="container all-blog-container"> 
-            <article class="blog-card all-blog-card">
+            <div id="no-results" style="display: none;">
+                <p class="blog-title">No results found</p>
+            </div>
+            <article class="blog-card all-blog-card" onclick="window.location.href=`/blog-template.html`">
                 <img src="img/img2.jpg" alt="Blog Image" class="blog-image">
                 <div class="blog-content">
                     <p class="blog-meta">Alec Whitten • 1 Jan 2023</p>
@@ -45,7 +48,7 @@
                     </div>
                 </div>
             </article>
-            <article class="blog-card all-blog-card">
+            <article class="blog-card all-blog-card" onclick="window.location.href=`/blog-template.html`">
                 <img src="img/img3.jpg" alt="Blog Image" class="blog-image">
                 <div class="blog-content">
                     <p class="blog-meta">Demi WIlkinson • 1 Jan 2023</p>
@@ -59,7 +62,7 @@
                     </div>
                 </div>
             </article>
-            <article class="blog-card all-blog-card">
+            <article class="blog-card all-blog-card" onclick="window.location.href=`/blog-template.html`">
                 <img src="img/img4.jpg" alt="Blog Image" class="blog-image">
                 <div class="blog-content">
                     <p class="blog-meta">Candice Wu • 1 Jan 2023</p>
@@ -72,7 +75,7 @@
                     </div>
                 </div>
             </article>
-            <article class="blog-card all-blog-card">
+            <article class="blog-card all-blog-card" onclick="window.location.href=`/blog-template.html`">
                 <img src="img/img5.jpg" alt="Blog Image" class="blog-image">
                 <div class="blog-content">
                     <p class="blog-meta">Natali Craig • 1 Jan 2023</p>
@@ -85,7 +88,7 @@
                     </div>
                 </div>
             </article>
-            <article class="blog-card all-blog-card">
+            <article class="blog-card all-blog-card" onclick="window.location.href=`/blog-template.html`">
                 <img src="img/img6.jpg" alt="Blog Image" class="blog-image">
                 <div class="blog-content">
                     <p class="blog-meta">Drew Cano • 1 Jan 2023</p>
@@ -99,7 +102,7 @@
                     </div>
                 </div>
             </article>
-            <article class="blog-card all-blog-card">
+            <article class="blog-card all-blog-card" onclick="window.location.href=`/blog-template.html`">
                 <img src="img/img7.jpg" alt="Blog Image" class="blog-image">
                 <div class="blog-content">
                     <p class="blog-meta">Orlando Diggs • 1 Jan 2023</p>
@@ -112,48 +115,45 @@
                     </div>
                 </div>
             </article>
-            <article class="blog-card all-blog-card">
-                <img src="img.png" alt="Blog Image" class="blog-image">
+            <article class="blog-card all-blog-card" onclick="window.location.href=`/blog-template.html`">
+                <img src="img/img13.jpg" alt="Blog Image" class="blog-image">
                 <div class="blog-content">
-                    <p class="blog-meta">Olivia Rhye . Jan 2023</p>
-                    <h3 class="blog-title">UX review presentation</h3>
+                    <p class="blog-meta">Eliza Storm •  Jan 2023</p>
+                    <h3 class="blog-title">The Tools Our UX Team Can’t Live Without</h3>
                     <p class="blog-description">
-                        How do you create compelling presentations that wow your colleagues and impress your managers?
-                    </p>
+                        Here are our top picks that helped streamline research, prototyping, and feedback collection.                    </p>
                     <div class="blog-tages">
                         <span class="tag tag-design">Design</span>
                         <span class="tag tag-research">Research</span>
-                        <span class="tag tag-presentation">Presentation</span>
+                        <span class="tag tag-tools">Tools</span>
                     </div>
                 </div>
             </article>
-            <article class="blog-card all-blog-card">
-                <img src="img.png" alt="Blog Image" class="blog-image">
+            <article class="blog-card all-blog-card" onclick="window.location.href=`/blog-template.html`">
+                <img src="img/img11.jpg" alt="Blog Image" class="blog-image">
                 <div class="blog-content">
-                    <p class="blog-meta">Olivia Rhye . Jan 2023</p>
-                    <h3 class="blog-title">UX review presentation</h3>
+                    <p class="blog-meta">Marcus Jang • Jan 2023</p>
+                    <h3 class="blog-title">Building Scalable Design Systems from Scratch</h3>
                     <p class="blog-description">
-                        How do you create compelling presentations that wow your colleagues and impress your managers?
-                    </p>
+                        Learn the foundational principles and tooling needed to maintain consistency as your product (and team) grows.                    </p>
                     <div class="blog-tages">
                         <span class="tag tag-design">Design</span>
-                        <span class="tag tag-research">Research</span>
-                        <span class="tag tag-presentation">Presentation</span>
+                        <span class="tag tag-framework">Framework</span>
+                        <span class="tag tag-components">Components</span>
                     </div>
                 </div>
             </article>
-            <article class="blog-card all-blog-card">
-                <img src="img.png" alt="Blog Image" class="blog-image">
+            <article class="blog-card all-blog-card" onclick="window.location.href=`/blog-template.html`" >
+                <img src="img/img12.jpg" alt="Blog Image" class="blog-image">
                 <div class="blog-content">
-                    <p class="blog-meta">Olivia Rhye . Jan 2023</p>
-                    <h3 class="blog-title">UX review presentation</h3>
+                    <p class="blog-meta">Lily Tran • Jan 2023</p>
+                    <h3 class="blog-title">Designing for Dark Mode: Tips & Tricks</h3>
                     <p class="blog-description">
-                        How do you create compelling presentations that wow your colleagues and impress your managers?
-                    </p>
+                        How to create a dark mode experience that feels intentional, not like an afterthought.                    </p>
                     <div class="blog-tages">
                         <span class="tag tag-design">Design</span>
-                        <span class="tag tag-research">Research</span>
-                        <span class="tag tag-presentation">Presentation</span>
+                        <span class="tag tag-research">Accessibility</span>
+                        <span class="tag tag-components">UI Components</span>
                     </div>
                 </div>
             </article>
